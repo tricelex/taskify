@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=taskify
+POSTGRES_USER=HtQyBJyvnZOuqwdjduLrMAGsGQuIDYwB
+POSTGRES_PASSWORD=0SMpOK3YNAYETUPoYzGAK9ljl4uUTfMkLlO12qhFPaIw1fvvhb066pWgXYYK5VNJ
