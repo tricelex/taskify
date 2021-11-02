@@ -1,10 +1,10 @@
 from django.contrib import admin
 
-from .models import List, Task
+from .models import TaskList, Task
 
 
-@admin.register(List)
-class ListAdmin(admin.ModelAdmin):
+@admin.register(TaskList)
+class TaskListAdmin(admin.ModelAdmin):
     list_display = ('id', 'created_datetime', 'updated_datetime', 'title')
     list_filter = ('created_datetime', 'updated_datetime')
 

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Task Lists</h1>
+  <p></p>
+
+  <a class="btn btn-danger" href="{% url 'todos:create_task_list' %}">Create New List</a>
+  <p></p>
+  <ul>
+    <!-- Iterate over object_list -->
+    {% for tasklist in tasklists %}
+      <!-- Display Objects -->
+      <li><a href="{% url 'todos:task_list_detail' tasklist.id %}">{{ tasklist.title }}</a></li>
+{#      <li>{{ object.description }}</li>#}
+      <hr/>
+      <!-- If objet_list is empty  -->
+    {% empty %}
+      <li>No objects yet.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

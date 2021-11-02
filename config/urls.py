@@ -17,6 +17,7 @@ urlpatterns = [
     path("users/", include("taskify.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
+    path("todo/", include("taskify.todo.urls", namespace="todos")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS
