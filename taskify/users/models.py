@@ -15,8 +15,8 @@ class User(AbstractUser):
     first_name = None  # type: ignore
     last_name = None  # type: ignore
 
-    def __str__(self):
-        return f'{self.user_uuid} - {self.name}'
+    # def __str__(self):
+    #     return f'{self.user_uuid} - {self.name}'
 
     def get_absolute_url(self):
         """Get url for user's detail view.
